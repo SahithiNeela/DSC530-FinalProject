@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DV Project-Group 7</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="d3.js"></script>
+  <script src="BarChart.js" defer></script>
+  <script src="LineChart.js" defer></script>
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Military Expenditure trends from 1949 to 2020</h1>
+    <h2>World’s Top 40 Largest Military Budgets</h2>
+  </header>
+
+  <!-- GeoSpatial Chart Section -->
+  <div style="display: flex; width: fit-content;">
+    <!-- Embed your GeoSpatial chart content here or provide an iframe to the URL -->
+    <iframe src="http://localhost:3000/" width="1200" height="650" frameborder="0"></iframe>
+  </div>
+  <!-- Bar Chart Section 1 -->
+  <div>
+    <h1>Bar Charts to compare military expenditure between two countries</h1>
+    <div style="display: flex; width: fit-content;">
+      <select id="Entity-dropdown-1"></select>
+      <div id="tooltip-1" style="margin-left: 20px;"></div>
+    </div>
+    <svg id="bar-chart-svg-1" width="1200" height="550"></svg>
+  </div>
+
+  <!-- Bar Chart Section 2 -->
+  <div>
+    <div style="display: flex; width: fit-content;">
+      <select id="Entity-dropdown-2"></select>
+      <div id="tooltip-2" style="margin-left: 20px;"></div>
+    </div>
+    <svg id="bar-chart-svg-2" width="1200" height="550"></svg>
+  </div>
+
+
+  <!-- Line Chart Section -->
+  <div>
+    <h1>Line chart - Trends in worldwide military spending</h1>
+    <svg id="line-chart-svg" width="1200" height="550"></svg>
+  </div>
+
+</body>
+
+</html>
